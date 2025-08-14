@@ -1,0 +1,526 @@
+/* ===== MOBILE FIRST HERO STYLES ===== */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background: linear-gradient(135deg, #fefefe 0%, #f8f6f3 100%);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Hero Background with Image Placeholder */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")
+    center/cover;
+  opacity: 0.03;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 165, 116, 0.02) 0%,
+    rgba(139, 69, 19, 0.02) 100%
+  );
+  z-index: 1;
+}
+
+/* Decorative Elements - Hidden on Mobile */
+.hero::after,
+.hero::before {
+  display: none;
+}
+
+/* Hero Content - Mobile First */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: calc(100vh - 90px);
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Hero Text - Mobile First */
+.hero-text {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
+  padding: 0 5px;
+}
+
+.hero-text h1 .highlight {
+  background: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  font-weight: 400;
+  max-width: 100%;
+  padding: 0 5px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  padding: 14px 28px;
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 250px;
+  min-height: 44px;
+  border-radius: 22px;
+}
+
+/* Appointment Form - Mobile First */
+.appointment-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(212, 165, 116, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.appointment-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
+}
+
+.form-container {
+  padding: 20px 15px;
+}
+
+.form-container h3 {
+  text-align: center;
+  color: #8b4513;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+.form-container .form-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Form Styling - Mobile First */
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid rgba(212, 165, 116, 0.2);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  color: #2c2c2c;
+  font-family: "Inter", sans-serif;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #d4a574;
+  background: white;
+  box-shadow: 0 0 0 2px rgba(212, 165, 116, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23D4A574' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  padding-right: 35px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  min-height: 44px;
+}
+
+/* Form Labels (if needed) */
+.form-label {
+  display: block;
+  color: #8b4513;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  letter-spacing: 0.3px;
+}
+
+/* ===== SMALL MOBILE (375px+) ===== */
+@media (min-width: 375px) {
+  .hero-content {
+    padding: 0 12px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .form-container {
+    padding: 22px 18px;
+  }
+
+  .form-container h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== TABLET STYLES ===== */
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .hero-content {
+    gap: 40px;
+    padding: 0 20px;
+    min-height: calc(100vh - 110px);
+    max-width: 1200px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .hero-buttons .btn {
+    width: auto;
+    min-width: 160px;
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  .form-container {
+    padding: 30px 25px;
+  }
+
+  .form-container h3 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .appointment-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media (min-width: 1024px) {
+  .hero {
+    padding-top: 90px;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 25px;
+    text-align: left;
+    align-items: center;
+    max-width: 1300px;
+  }
+
+  .hero-text {
+    text-align: left;
+    flex: 1.2;
+  }
+
+  .hero-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    max-width: 550px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .hero-buttons .btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    min-width: 170px;
+  }
+
+  .appointment-form {
+    flex: 0.8;
+    max-width: 420px;
+    margin: 0;
+  }
+
+  .form-container {
+    padding: 35px 30px;
+  }
+
+  .form-container h3 {
+    font-size: 1.7rem;
+  }
+
+  /* Show decorative elements on desktop */
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -8%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+      circle,
+      rgba(212, 165, 116, 0.06) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+      circle,
+      rgba(139, 69, 19, 0.04) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+  }
+}
+
+/* ===== LARGE DESKTOP STYLES ===== */
+@media (min-width: 1200px) {
+  .hero-content {
+    gap: 60px;
+    padding: 0 30px;
+    max-width: 1400px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+  }
+
+  .hero-text p {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+  }
+
+  .appointment-form {
+    max-width: 450px;
+  }
+
+  .hero::after {
+    width: 500px;
+    height: 500px;
+  }
+
+  .hero::before {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Floating Animation for Form - Desktop Only */
+@media (min-width: 1024px) {
+  .appointment-form {
+    animation: slideInRight 0.8s ease-out, float 6s ease-in-out infinite 1s;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+  .hero-text,
+  .appointment-form {
+    animation: none;
+  }
+}
+
+/* ===== TOUCH DEVICE OPTIMIZATIONS ===== */
+@media (hover: none) and (pointer: coarse) {
+  .form-group input:focus,
+  .form-group select:focus {
+    transform: none;
+  }
+
+  .hero-buttons .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

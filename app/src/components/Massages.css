@@ -1,0 +1,413 @@
+/* ===== MOBILE FIRST MASSAGES STYLES ===== */
+.massages {
+  background: linear-gradient(135deg, #fefefe 0%, #f8f6f3 100%);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.massages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.massage-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 165, 116, 0.2);
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 100%;
+}
+
+.massage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border-color: rgba(212, 165, 116, 0.4);
+}
+
+.massage-card.popular {
+  border-color: #d4a574;
+  box-shadow: 0 10px 30px rgba(212, 165, 116, 0.2);
+}
+
+.massage-card.popular:hover {
+  box-shadow: 0 20px 40px rgba(212, 165, 116, 0.3);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 3px 10px rgba(212, 165, 116, 0.4);
+}
+
+.massage-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.massage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.massage-card:hover .massage-image img {
+  transform: scale(1.05);
+}
+
+.massage-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(212, 165, 116, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.massage-card:hover .massage-overlay {
+  opacity: 1;
+}
+
+.duration-badge {
+  background: rgba(255, 255, 255, 0.95);
+  color: #8b4513;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+.massage-content {
+  padding: 20px 15px;
+}
+
+.massage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.massage-name {
+  color: #8b4513;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+.massage-price {
+  color: #d4a574;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  flex-shrink: 0;
+}
+
+.massage-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.massage-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 0.9rem;
+  min-height: 44px;
+}
+
+/* Massage Info Section */
+.massage-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(212, 165, 116, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #d4a574 0%, #b8860b 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover::before {
+  transform: scaleX(1);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.info-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.info-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover .info-icon img {
+  transform: scale(1.1);
+}
+
+.info-card h4 {
+  color: #8b4513;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* ===== SMALL MOBILE (375px+) ===== */
+@media (min-width: 375px) {
+  .massage-content {
+    padding: 22px 18px;
+  }
+
+  .massage-name {
+    font-size: 1.25rem;
+  }
+
+  .massage-price {
+    font-size: 1.4rem;
+  }
+
+  .info-card {
+    padding: 28px 22px;
+  }
+
+  .info-icon {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* ===== TABLET STYLES ===== */
+@media (min-width: 768px) {
+  .massages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+
+  .massage-card {
+    max-width: none;
+  }
+
+  .massage-image {
+    height: 200px;
+  }
+
+  .massage-content {
+    padding: 25px 20px;
+  }
+
+  .massage-name {
+    font-size: 1.3rem;
+  }
+
+  .massage-price {
+    font-size: 1.4rem;
+  }
+
+  .massage-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 60px;
+  }
+
+  .info-card {
+    padding: 30px 25px;
+  }
+
+  .info-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info-card h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media (min-width: 1024px) {
+  .massages-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  .massage-image {
+    height: 220px;
+  }
+
+  .massage-content {
+    padding: 30px 25px;
+  }
+
+  .massage-header {
+    margin-bottom: 15px;
+  }
+
+  .massage-name {
+    font-size: 1.4rem;
+  }
+
+  .massage-price {
+    font-size: 1.5rem;
+  }
+
+  .massage-description {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .massage-info {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+  }
+
+  .info-card {
+    padding: 35px 30px;
+  }
+
+  .info-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+  }
+
+  .info-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .info-card p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== LARGE DESKTOP STYLES ===== */
+@media (min-width: 1200px) {
+  .massages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-bottom: 100px;
+  }
+
+  .massage-image {
+    height: 240px;
+  }
+
+  .massage-content {
+    padding: 35px 30px;
+  }
+
+  .info-card {
+    padding: 40px 35px;
+  }
+
+  .massage-info {
+    margin-top: 100px;
+    gap: 35px;
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+  .massage-card,
+  .info-card,
+  .massage-image img,
+  .info-icon img {
+    transition: none;
+  }
+}
+
+/* ===== TOUCH DEVICE OPTIMIZATIONS ===== */
+@media (hover: none) and (pointer: coarse) {
+  .massage-card:hover,
+  .info-card:hover {
+    transform: none;
+  }
+
+  .massage-overlay {
+    display: none;
+  }
+
+  .massage-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
