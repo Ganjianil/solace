@@ -1,5 +1,28 @@
 import React, { useState } from 'react';
 import './Gallery.css';
+import inside from "/inside.jpeg"
+import inside2 from "/inside2.jpeg";
+import inside3 from "/inside3.jpeg"
+import inside4 from "/inside4.jpeg";
+import inside5 from "/inside5.jpeg";
+import inside6 from "/inside6.jpeg";
+import inside7 from "/inside7.jpeg";
+import inside8 from "/inside8.jpeg";
+import inside9 from "/inside9.jpeg";
+import inside10 from "/inside10.jpeg";
+import inside11 from "/inside11.jpeg";
+import inside12 from "/inside12.jpeg";
+import inside13 from "/inside13.jpeg";
+import inside14 from "/inside14.jpeg";
+import inside16 from "/inside16.jpeg";
+import out from "/out.jpeg"
+import out1 from "/out1.jpeg"
+import out2 from "/out2.jpeg"
+import outt from "/outt.jpeg"
+
+
+
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -7,63 +30,140 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      title: 'Spa Reception Area',
-      category: 'Interior',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Elegant reception area with modern amenities'
+      title: "Spa Reception Area",
+      category: "Interior",
+      image: inside,
+      description: "Peaceful relaxation space for pre-treatment meditation",
     },
     {
       id: 2,
-      title: 'Relaxation Room',
-      category: 'Interior',
-      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Peaceful relaxation space for pre-treatment meditation'
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside2,
+      description: "Peaceful relaxation space for pre-treatment meditation",
     },
     {
       id: 3,
-      title: 'Massage Room',
-      category: 'Treatment',
-      image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Private massage room with ambient lighting'
+      title: "Massage Room",
+      category: "Interior",
+      image: inside3,
+      description: "Private massage room with ambient lighting",
     },
     {
       id: 4,
-      title: 'Aromatherapy Setup',
-      category: 'Treatment',
-      image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Essential oils and aromatherapy equipment'
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside4,
+      description: "Peaceful relaxation space for pre-treatment meditation",
     },
     {
       id: 5,
-      title: 'Spa Garden',
-      category: 'Exterior',
-      image: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Tranquil garden area for outdoor relaxation'
+      title: "Massage room",
+      category: "Interior",
+      image: inside5,
+      description: "Peaceful relaxation space for pre-treatment meditation",
     },
     {
       id: 6,
-      title: 'Hydrotherapy Pool',
-      category: 'Facilities',
-      image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Therapeutic hydrotherapy pool'
+      title: "Massage room",
+      category: "Interior",
+      image: inside6,
+      description: "Peaceful relaxation space for pre-treatment meditation",
     },
     {
       id: 7,
-      title: 'Steam Room',
-      category: 'Facilities',
-      image: 'https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Detoxifying steam room facility'
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside7,
+      description: "Peaceful relaxation space for pre-treatment meditation",
     },
     {
       id: 8,
-      title: 'Product Display',
-      category: 'Products',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      description: 'Premium spa products and treatments'
-    }
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside8,
+      description: "Premium spa products and treatments",
+    },
+    {
+      id: 9,
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside9,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 10,
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside10,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 11,
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside11,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 12,
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside12,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 13,
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside13,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 14,
+      title: "Relaxation Room",
+      category: "Exterior",
+      image: inside14,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 15,
+      title: "Relaxation Room",
+      category: "Interior",
+      image: inside16,
+      description: "Elegant reception area with modern amenities",
+    },
+    {
+      id: 16,
+      title: "Relaxation Room",
+      category: "Exterior",
+      image: out,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 17,
+      title: "Spa Reception Area",
+      category: "Exterior",
+      image: out1,
+      description: "Elegant reception area with modern amenities",
+    },
+    {
+      id: 18,
+      title: "Relaxation Room",
+      category: "Exterior",
+      image: out2,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
+    {
+      id: 19,
+      title: "Relaxation Room",
+      category: "Exterior",
+      image: outt,
+      description: "Peaceful relaxation space for pre-treatment meditation",
+    },
   ];
 
-  const categories = ['All', 'Interior', 'Treatment', 'Facilities', 'Products', 'Exterior'];
+  const categories = ['All', 'Interior', 'Exterior'];
   const [activeCategory, setActiveCategory] = useState('All');
 
   const filteredImages = activeCategory === 'All' 
