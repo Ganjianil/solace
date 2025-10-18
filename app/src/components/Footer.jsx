@@ -25,10 +25,9 @@ const Footer = () => {
               <span> WELLNESS SPA</span>
             </div>
             <p className="footer-description">
-              Experience the ultimate in relaxation and wellness at 
-              Solace Wellness Spa. We combine traditional healing techniques
-              with modern luxury to provide you with an unforgettable spa
-              experience.
+              Experience the ultimate in relaxation and wellness at Solace
+              Wellness Spa. We combine traditional healing techniques with
+              modern luxury to provide you with an unforgettable spa experience.
             </p>
             <div className="social-links">
               <a href="#" className="social-link" aria-label="Facebook">
@@ -116,8 +115,8 @@ const Footer = () => {
                 <span className="contact-icon">📍</span>
                 <div>
                   <p> Solace Wellness Spa</p>
-                  <p>123 Wellness Street</p>
-                  <p>Spa District, City - 500001</p>
+                  <p> Flat no 201 Hno 3-6-369/2, Himayathnagar</p>
+                  <p>Circle 16 hyderabad</p>
                 </div>
               </div>
 
@@ -183,8 +182,7 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="copyright">
               <p>
-                &copy; {currentYear} Solace Wellness Spa. All rights
-                reserved.
+                &copy; {currentYear} Solace Wellness Spa. All rights reserved.
               </p>
             </div>
             <div className="footer-bottom-links">

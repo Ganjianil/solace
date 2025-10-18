@@ -65,9 +65,9 @@ const Contact = () => {
               <p>
                 Solace Wellness Spa
                 <br />
-                Hyderabad, Telangana
+                Flat no 201 H no 3-6-369/2, Himayathnagar
                 <br />
-                India - 500001
+                Circle 16,Htderabad
                 <br />
                 <small>17°24'18.8"N 78°28'49.3"E</small>
               </p>
