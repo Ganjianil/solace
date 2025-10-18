@@ -65,11 +65,10 @@ const Contact = () => {
               <p>
                 Solace Wellness Spa
                 <br />
-                Flat no 201 H no 3-6-369/2, Himayathnagar
+                Flat no 201 Hno 3-6-369/2, Himayathnagar
                 <br />
-                Circle 16,Hyderabad
+                Circle 16,Hyderabad-500029
                 <br />
-                <small>17°24'18.8"N 78°28'49.3"E</small>
               </p>
               <a
                 href={`https://www.google.com/maps?q=${latitude},${longitude}`}

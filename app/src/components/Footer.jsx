@@ -116,7 +116,7 @@ const Footer = () => {
                 <div>
                   <p> Solace Wellness Spa</p>
                   <p> Flat no 201 Hno 3-6-369/2, Himayathnagar</p>
-                  <p>Circle 16 hyderabad</p>
+                  <p>Circle 16 Hyderabad-500029</p>
                 </div>
               </div>
 
