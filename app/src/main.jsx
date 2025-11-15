@@ -11,7 +11,7 @@ const setupSEO = () => {
   // Meta description
   const metaDescription = document.createElement('meta');
   metaDescription.name = 'description';
-  metaDescription.content = 'Experience ultimate relaxation at Solace Wellness Spa in Hyderabad. Premium massage therapy, Ayurvedic treatments, aromatherapy, and luxury spa services. Book your appointment today for rejuvenation and wellness.';
+  metaDescription.content = 'Experience ultimate relaxation at Solace Wellness Spa in Hyderabad. Premium massage therapy, Ayurvedic treatments, aromatherapy, and luxury spa services. Book your appointment today for rejuvenation & wellness.';
   document.head.appendChild(metaDescription);
 
   // Meta keywords
