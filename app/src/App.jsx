@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BookingPopup from './components/BookingPopup';
+import FloatingButton from './components/FloatingButton'; // <-- Import your new component
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Testimonials />
         <Contact />
         <Footer />
+        <FloatingButton /> {/* <-- KEEP IT HERE */}
         <BookingPopup />
       </div>
     </BookingProvider>
